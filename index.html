@@ -9,7 +9,7 @@
     <!-- tailwind css cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- google font cdn -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d536e0cd3b.js" crossorigin="anonymous"></script>
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -61,162 +61,199 @@
 </head>
 
 <body class="bg-gray-100">
-    <div class="flex h-screen overflow-hidden">
-        <!-- Left side -->
-        <div class="lg:flex flex-col justify-between w-1/2 bg-[#001f3f] text-white p-20 relative">
-            <div>
-                <h2 class="text-2xl font- ">StremioPay<span class="text-[#004aad]">.</span></h2>
-            </div>
-            <div>
-                <h1 class="text-4xl font-bold leading-tight">Your Payment Hub</h1>
-                <p class="text-xl mt-4 text-blue-200">Short, modern, and emphasizes the flow of money.</p>
-            </div>
-            <!-- background effect -->
-            <div class="absolute top-0 right-0 "><svg width="800" height="800" viewBox="0 0 1479 1479" fill="none"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <defs>
-                        <filter id="filter_118_641_dd" x="0.000000" y="0.000000" width="1479.000000"
-                            height="1479.000000" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-                            <feGaussianBlur stdDeviation="183.333" result="effect_layerBlur_1" />
-                        </filter>
-                    </defs>
-                    <g filter="url(#filter_118_641_dd)">
-                        <circle id="Ellipse 1" cx="739.500000" cy="739.500000" r="189.500000" fill="#2D55FB"
-                            fill-opacity="1.000000" />
-                    </g>
-                </svg>
-            </div>
-            <div class="absolute bottom-0 left-25">
-                <svg width="800" height="800" viewBox="0 0 1479 1479" fill="none" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <defs>
-                        <filter id="filter_118_641_dd" x="0.000000" y="0.000000" width="1479.000000"
-                            height="1479.000000" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-                            <feGaussianBlur stdDeviation="183.333" result="effect_layerBlur_1" />
-                        </filter>
-                    </defs>
-                    <g filter="url(#filter_118_641_dd)">
-                        <circle id="Ellipse 1" cx="739.500000" cy="739.500000" r="189.500000" fill="#2D55FB"
-                            fill-opacity="1.000000" />
-                    </g>
-                </svg>
 
+    <!-- Header -->
+    <header class="bg-[#001f3f] text-white">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center h-16">
+            <div class="flex items-center space-x-12">
+                <a href="#" class="text-2xl font-bold text-yellow-400">StremioPay</a>
+                <ul class="hidden md:flex items-center space-x-8">
+                    <li><a href="#" class="border-b-2 border-yellow-400 pb-1">Send money</a></li>
+                    <li><a href="#" class="hover:text-yellow-400">Pick-up cash</a></li>
+                    <li><a href="#" class="hover:text-yellow-400">Track transfer</a></li>
+                    <li><a href="#" class="hover:text-yellow-400">Pay bills</a></li>
+                    <li><a href="#" class="hover:text-yellow-400">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-yellow-400">Support</a></li>
+                </ul>
             </div>
-        </div>
+            <div class="flex items-center space-x-4">
+                <button class="flex items-center space-x-1">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
+                        alt="US Flag" class="w-6 h-auto">
+                    <span>EN</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <a href="#" class="px-5 py-2 border border-gray-600 rounded-md hover:bg-gray-700"><i
+                        class="fa-regular fa-circle-user"></i></a>
+                <a href="#"
+                    class="px-5 py-2 bg-yellow-400 text-black font-bold rounded-md hover:bg-yellow-500">0.000</a>
+            </div>
+        </nav>
+    </header>
+<div class="w-full bg-yellow-400 p-0.5"></div>
+    <main>
+        <div class="flex h-screen flex-col lg:flex-row lg:overflow-hidden">
+            <!-- Left side -->
+            <div class="lg:flex flex-col justify-between lg:w-1/2 bg-[#001f3f] text-white p-20 relative">
+                <div>
+                    <h2 class="text-2xl font- ">StremioPay<span class="text-[#004aad]">.</span></h2>
+                </div>
+                <div>
+                    <h1 class="text-4xl font-bold leading-tight">Your Payment Hub</h1>
+                    <p class="text-xl mt-4 text-blue-200">Short, modern, and emphasizes the flow of money.</p>
+                </div>
+                <!-- background effect -->
+                <div class="absolute top-0 right-0 "><svg width="800" height="800" viewBox="0 0 1479 1479" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs>
+                            <filter id="filter_118_641_dd" x="0.000000" y="0.000000" width="1479.000000"
+                                height="1479.000000" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                                <feGaussianBlur stdDeviation="183.333" result="effect_layerBlur_1" />
+                            </filter>
+                        </defs>
+                        <g filter="url(#filter_118_641_dd)">
+                            <circle id="Ellipse 1" cx="739.500000" cy="739.500000" r="189.500000" fill="#2D55FB"
+                                fill-opacity="1.000000" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="absolute bottom-0 left-25">
+                    <svg width="800" height="800" viewBox="0 0 1479 1479" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs>
+                            <filter id="filter_118_641_dd" x="0.000000" y="0.000000" width="1479.000000"
+                                height="1479.000000" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                                <feGaussianBlur stdDeviation="183.333" result="effect_layerBlur_1" />
+                            </filter>
+                        </defs>
+                        <g filter="url(#filter_118_641_dd)">
+                            <circle id="Ellipse 1" cx="739.500000" cy="739.500000" r="189.500000" fill="#2D55FB"
+                                fill-opacity="1.000000" />
+                        </g>
+                    </svg>
 
-        <!-- Right side -->
-        <div class="w-full lg:w-1/2 flex items-center justify-center bg-white p-8">
-            <div class="w-full max-w-md space-y-8 container" id="cardContainer">
-                <div class="card">
-                    <!-- Create Account Form -->
-                    <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200 card-face card-face-front">
-                        <h2 class="text-2xl font-bold text-gray-800 mb-6">Create an account</h2>
-                        <form>
-                            <div class="mb-4">
-                                <label for="login-phone" class="block text-sm font-medium text-gray-700">Phone
-                                    Number</label>
-                                <input type="text" id="login-phone" value="012345678910"
-                                    class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
-                            </div>
-                            <div class="mb-4">
-                                <div class="flex items-center justify-between">
-                                    <label for="login-password"
-                                        class="block text-sm font-medium text-gray-700">Password</label>
-                                    <a href="#" class="text-sm text-blue-600 hover:text-blue-500">Forgot?</a>
-                                </div>
-                                <div class="relative">
-                                    <input type="password" id="login-password" placeholder="Enter your PIN"
+                </div>
+            </div>
+
+            <!-- Right side -->
+            <div class="w-full lg:w-1/2 flex items-center justify-center bg-white p-8">
+                <div class="w-full max-w-md space-y-8 container" id="cardContainer">
+                    <div class="card">
+                        <!-- Create Account Form -->
+                        <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200 card-face card-face-front">
+                            <h2 class="text-2xl font-bold text-gray-800 mb-6">Create an account</h2>
+                            <form>
+                                <div class="mb-4">
+                                    <label for="login-phone" class="block text-sm font-medium text-gray-700">Phone
+                                        Number</label>
+                                    <input type="text" id="login-phone" value="012345678910"
                                         class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
-                                    <span class="absolute inset-y-0 right-0 pr-3 flex items-center text-sm leading-5">
-                                        <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
-                                            <path fill-rule="evenodd"
-                                                d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.27 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
-                                                clip-rule="evenodd" />
-                                        </svg>
-                                    </span>
                                 </div>
-                            </div>
-                            <div class="flex items-center mb-4">
-                                <input type="checkbox" name="condition" id="condition"> <label for="condition">agree
-                                    with
-                                    our trams and condition</label>
-
-                            </div>
-                            <button type="submit"
-                                class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                                Login now
-                            </button>
-                            <button
-                                class="w-full flex items-center justify-center mt-4 py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-[#D1E9FF] hover:bg-gray-50">
-                                <img src="asset/google-logo.png" alt="Google" class="h-5 w-5 mr-2">
-                                Continue with Google
-                            </button>
-                        </form>
-
-                        <p class="text-sm text-center text-gray-500 mt-6">
-                            Already have an account? <a href="#" class="font-medium text-blue-600 hover:text-blue-500"
-                                onclick="toggleCard()">Log
-                                in</a>
-                        </p>
-                    </div>
-
-                    <!-- Login Form -->
-                    <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200 card-face card-face-back">
-                        <h2 class="text-2xl font-bold text-gray-800 mb-6">Login to your account</h2>
-                        <form>
-                            <div class="mb-4">
-                                <label for="login-phone" class="block text-sm font-medium text-gray-700">Phone
-                                    Number</label>
-                                <input type="text" id="login-phone" value="012345678910"
-                                    class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
-                            </div>
-                            <div class="mb-4">
-                                <div class="flex items-center justify-between">
-                                    <label for="login-password"
-                                        class="block text-sm font-medium text-gray-700">Password</label>
-                                    <a href="#" class="text-sm text-blue-600 hover:text-blue-500">Forgot?</a>
+                                <div class="mb-4">
+                                    <div class="flex items-center justify-between">
+                                        <label for="login-password"
+                                            class="block text-sm font-medium text-gray-700">Password</label>
+                                        <a href="#" class="text-sm text-blue-600 hover:text-blue-500">Forgot?</a>
+                                    </div>
+                                    <div class="relative">
+                                        <input type="password" id="login-password" placeholder="Enter your PIN"
+                                            class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                                        <span
+                                            class="absolute inset-y-0 right-0 pr-3 flex items-center text-sm leading-5">
+                                            <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 20 20" fill="currentColor">
+                                                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                                                <path fill-rule="evenodd"
+                                                    d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.27 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </span>
+                                    </div>
                                 </div>
-                                <div class="relative">
-                                    <input type="password" id="login-password" placeholder="Enter your PIN"
+                                <div class="flex items-center mb-4">
+                                    <input type="checkbox" name="condition" id="condition"> <label for="condition">agree
+                                        with
+                                        our trams and condition</label>
+
+                                </div>
+                                <button type="submit"
+                                    class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-semibold text-black bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                    Login now
+                                </button>
+                                <button
+                                    class="w-full flex items-center justify-center mt-4 py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-[#D1E9FF] hover:bg-gray-50">
+                                    <img src="asset/google-logo.png" alt="Google" class="h-5 w-5 mr-2">
+                                    Continue with Google
+                                </button>
+                            </form>
+
+                            <p class="text-sm text-center text-gray-500 mt-6">
+                                Already have an account? <a href="#"
+                                    class="font-medium text-blue-600 hover:text-blue-500" onclick="toggleCard()">Log
+                                    in</a>
+                            </p>
+                        </div>
+
+                        <!-- Login Form -->
+                        <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200 card-face card-face-back">
+                            <h2 class="text-2xl font-bold text-gray-800 mb-6">Login to your account</h2>
+                            <form>
+                                <div class="mb-4">
+                                    <label for="login-phone" class="block text-sm font-medium text-gray-700">Phone
+                                        Number</label>
+                                    <input type="text" id="login-phone" value="012345678910"
                                         class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
-                                    <span class="absolute inset-y-0 right-0 pr-3 flex items-center text-sm leading-5">
-                                        <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
-                                            <path fill-rule="evenodd"
-                                                d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.27 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
-                                                clip-rule="evenodd" />
-                                        </svg>
-                                    </span>
                                 </div>
-                            </div>
-                            <div class="flex items-center mb-4">
-                                <input type="checkbox" name="condition" id="condition"> <label for="condition">agree
-                                    with
-                                    our trams and condition</label>
+                                <div class="mb-4">
+                                    <div class="flex items-center justify-between">
+                                        <label for="login-password"
+                                            class="block text-sm font-medium text-gray-700">Password</label>
+                                        <a href="#" class="text-sm text-blue-600 hover:text-blue-500">Forgot?</a>
+                                    </div>
+                                    <div class="relative">
+                                        <input type="password" id="login-password" placeholder="Enter your PIN"
+                                            class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                                        <span
+                                            class="absolute inset-y-0 right-0 pr-3 flex items-center text-sm leading-5">
+                                            <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 20 20" fill="currentColor">
+                                                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                                                <path fill-rule="evenodd"
+                                                    d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.27 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center mb-4">
+                                    <input type="checkbox" name="condition" id="condition"> <label for="condition">agree
+                                        with
+                                        our trams and condition</label>
 
-                            </div>
-                            <button type="submit"
-                                class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                                Login now
-                            </button>
-                        </form>
-                        <p class="text-sm text-center text-gray-500 mt-6">
-                            Don't have an account? <a href="#" class="font-medium text-blue-600 hover:text-blue-500"
-                                onclick="toggleCard()">Sign
-                                up</a>
-                        </p>
+                                </div>
+                                <button type="submit"
+                                    class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-semibold text-black bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                    Login now
+                                </button>
+                            </form>
+                            <p class="text-sm text-center text-gray-500 mt-6">
+                                Don't have an account? <a href="#" class="font-medium text-blue-600 hover:text-blue-500"
+                                    onclick="toggleCard()">Sign
+                                    up</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <script src="script/login.js"></script>
 </body>

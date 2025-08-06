@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eastern Union - Send Money Online</title>
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font cdn -->
+     <script src="https://kit.fontawesome.com/d536e0cd3b.js" crossorigin="anonymous"></script>
+    <style>
+        .form-radio:checked {
+            background-color: #f59e0b; /* A yellow color from Tailwind's palette */
+            border-color: #f59e0b;
+        }
+        .active-option {
+            border-color: #facc15; /* yellow-400 */
+            box-shadow: 0 0 0 2px #facc15;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-12">
+                <a href="#" class="text-2xl font-bold text-yellow-400">StremioPay</a>
+                <ul class="hidden md:flex items-center space-x-8">
+                    <li><a href="#" class="border-b-2 border-yellow-400 pb-1">Send money</a></li>
+                    <li><a href="#" class="hover:text-yellow-400">Pick-up cash</a></li>
+                    <li><a href="#" class="hover:text-yellow-400">Track transfer</a></li>
+                    <li><a href="#" class="hover:text-yellow-400">Pay bills</a></li>
+                    <li><a href="#" class="hover:text-yellow-400">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-yellow-400">Support</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="flex items-center space-x-1">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="US Flag" class="w-6 h-auto">
+                    <span>EN</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <a href="#" class="px-5 py-2 border border-gray-600 rounded-md hover:bg-gray-700"><i class="fa-regular fa-circle-user"></i></a>
+                <a href="#" class="px-5 py-2 bg-yellow-400 text-black font-bold rounded-md hover:bg-yellow-500">0.000</a>
+            </div>
+        </nav>
+        <div class="w-full bg-yellow-400 p-0.5"></div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-16">
+        <div class="grid lg:grid-cols-2 gap-20 items-center">
+            <!-- Left Column -->
+            <div class="text-gray-800">
+                <h1 class="text-5xl lg:text-6xl font-extrabold leading-tight">The fast and trusted way to send money online</h1>
+                <p class="mt-6 text-lg text-gray-600">
+                    Whether you need to send money to friends down the street or family across the globe, Eastern Union gets your funds there quickly and reliably.
+                </p>
+                <div class="mt-12 grid md:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-lg border border-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                        <h3 class="font-bold mt-4">Fast</h3>
+                        <p class="text-sm text-gray-600 mt-1">Send money online to loved ones across the world.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg border border-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 20.417l4.5-4.5M12 21.055a11.955 11.955 0 01-8.618-3.04A12.02 12.02 0 003 9.583l4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <h3 class="font-bold mt-4">Safe</h3>
+                        <p class="text-sm text-gray-600 mt-1">Feel secure knowing we have sent over a billion.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg border border-gray-200">
+                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.085a2 2 0 00-1.736.986L5.5 8m7 2v5m0 0v5m0-5h2.5" />
+                        </svg>
+                        <h3 class="font-bold mt-4">Great Value</h3>
+                        <p class="text-sm text-gray-600 mt-1">Great rates, special offers, and no hidden fees.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Column - Form -->
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-bold text-gray-800">Send money online</h2>
+                <form class="mt-6 space-y-6">
+                    <div>
+                        <label for="country" class="block text-sm font-medium text-gray-700">Receiver's country</label>
+                        <select id="country" name="country" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm rounded-md border">
+                            <option>Select country</option>
+                            <option>Mexico</option>
+                            <option>India</option>
+                            <option>Philippines</option>
+                        </select>
+                    </div>
+
+                    <div class="flex items-end space-x-2">
+                        <div class="flex-1">
+                            <label for="send-amount" class="block text-sm font-medium text-gray-700">Send amount</label>
+                            <input type="text" name="send-amount" id="send-amount" value="0.00" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm">
+                        </div>
+                        <div class="px-2 text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                             <label for="receive-amount" class="block text-sm font-medium text-gray-700">Receive amount</label>
+                            <input type="text" name="receive-amount" id="receive-amount" value="0.00" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">How does your receiver want the money?</label>
+                        <div class="mt-2 grid grid-cols-3 gap-3">
+                            <div class="cursor-pointer border border-gray-300 rounded-md py-3 px-3 flex flex-col items-center justify-center text-sm hover:border-yellow-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                                <span class="mt-2">Cash pick-up</span>
+                            </div>
+                             <div class="cursor-pointer border border-gray-300 rounded-md py-3 px-3 flex flex-col items-center justify-center text-sm hover:border-yellow-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                                </svg>
+                                <span class="mt-2">Bank account</span>
+                            </div>
+                            <div class="cursor-pointer border border-gray-200 bg-gray-50 rounded-md py-3 px-3 flex flex-col items-center justify-center text-sm active-option">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Paytm_Logo.png/640px-Paytm_Logo.png" alt="Paytm Logo" class="h-8 w-auto">
+                                <span class="mt-2">Mobile Wallet</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">How would you like to pay?</label>
+                        <div class="mt-2 flex items-center space-x-6">
+                            <label class="flex items-center">
+                                <input type="radio" name="payment-type" class="form-radio h-4 w-4 text-yellow-500 border-gray-300" checked>
+                                <span class="ml-2 text-sm text-gray-700">Pay online</span>
+                            </label>
+                             <label class="flex items-center">
+                                <input type="radio" name="payment-type" class="form-radio h-4 w-4 text-yellow-500 border-gray-300">
+                                <span class="ml-2 text-sm text-gray-700">Pay cash in-store</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-3">
+                        <div class="cursor-pointer border border-gray-300 rounded-md py-3 px-3 flex flex-col items-center justify-center text-sm hover:border-yellow-400">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                               <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                             </svg>
+                             <span class="mt-2">Credit card</span>
+                        </div>
+                        <div class="cursor-pointer border border-gray-300 rounded-md py-3 px-3 flex flex-col items-center justify-center text-sm hover:border-yellow-400">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                               <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                             </svg>
+                             <span class="mt-2">Debit card</span>
+                        </div>
+                        <div class="cursor-pointer border border-gray-300 rounded-md py-3 px-3 flex flex-col items-center justify-center text-sm hover:border-yellow-400">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                               <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                             </svg>
+                             <span class="mt-2">Bank account</span>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-lg font-bold text-black bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500">
+                            Continue
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
